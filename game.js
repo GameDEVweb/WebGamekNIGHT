@@ -203,4 +203,11 @@ function endGame(win) {
     gameScreen.classList.add('hidden');
     resultScreen.classList.remove('hidden');
     resultText.textContent = win ? 'Você venceu!' : 'Você perdeu!';
+
+    // Se o jogador perder, o jogo reinicia após 2 segundos
+    if (!win) {
+        setTimeout(() => {
+            restartGame(); // Reinicia o jogo
+        }, 2000); // Espera 2 segundos antes de reiniciar
+    }
 }
