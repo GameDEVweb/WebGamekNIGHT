@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogue-like Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="home">
+        <h1>Fuja, doido!</h1>
+        <button id="playButton">Jogar</button>
+    </div>
+    <div id="game" class="hidden">
+        <canvas id="gameCanvas" width="500" height="500"></canvas>
+        <p id="timer">Tempo: 10</p>
+        <button id="backButton">Voltar</button>
+    </div>
+    <div id="result" class="hidden">
+        <h1 id="resultText"></h1>
+        <button id="restartButton">Recomeçar</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
